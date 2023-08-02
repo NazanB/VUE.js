@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://unpkg.com/vue@next"></script>
+    <div id="app">
+        <header>
+            <div class="colorInput">
+                <label for="red">r</label>
+                <input id="redInput" type="range" min="0" max="255" v-model="red">
+            </div>
+            <div class="colorInput">
+                <label for="green">g</label>
+                <input id="greenInput" type="range" min="0" max="255" v-model="green">
+            </div>
+            <div class="colorInput">
+                <label for="blue">b</label>
+                <input id="blueInput" type="range" min="0" max="255" v-model="blue">
+            </div>
+            <div id="hex-color">{{ hexColor}}</div>
+        </header>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
